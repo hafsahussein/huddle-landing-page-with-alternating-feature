@@ -189,8 +189,9 @@ footer li, footer .social-icons{
               margin-bottom: 50px;
           }
           .bottom-container{
-              padding: 45px 25px;
-              max-width: 90vw;
+              padding: 55px 25px;
+              width: 600px;
+              max-width: 95vw;
           }
           .bottom-container h2{
             font-size: 0.9em;
