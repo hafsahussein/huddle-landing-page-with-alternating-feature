@@ -39,21 +39,21 @@ li,a{
     font-size: inherit;
 }
 .grid{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-gap: 50px;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-gap: 50px;
 }
 .top-container, .middle-container, footer{
   padding: 50px;
 }
 .top-container{
-    background-image: url(images/bg-hero-desktop.svg);
+    background-image: url("https://raw.githubusercontent.com/hafsahussein/huddle-landing-page-with-alternating-feature/a232a852457e0063956be509f64cb2daab6b02df/images/bg-hero-desktop.svg");
     background-color:  hsl(193, 100%, 96%)  ;
     background-position: top center;
     background-repeat: no-repeat;
     font-size: 1.1em;
       }
-     .top-container .top{
+ .top-container .top{
           display: flex;
           justify-content: space-between;
       }
@@ -90,15 +90,15 @@ grid-gap: 50px;
         transform: translate(-50%, 50%);
         text-align: center;
         background-color: white;
-        padding:65px ;
+        padding:100px ;
         width:fit-content;
          border-radius: 10px;
-         box-shadow: 0 -2px 2px 0px hsl(208, 11%, 55%);
+         box-shadow: 0 0 2px 0px hsl(208, 11%, 55%);
       }
 footer{
     color: white;
     background-color:  hsl(192, 100%, 9%);
-    padding-top: 130px;
+    padding:150px 50px 50px;
    
 }
 .footer-widgets{
@@ -152,7 +152,7 @@ footer li, footer .social-icons{
       }
       @media screen and (max-width:991px){
         .top-container{
-          background-image: url(images/bg-hero-mobile.svg);
+          background-image: url("https://raw.githubusercontent.com/hafsahussein/huddle-landing-page-with-alternating-feature/a232a852457e0063956be509f64cb2daab6b02df/images/bg-hero-mobile.svg");
          
             }
        .top img{
@@ -162,7 +162,7 @@ footer li, footer .social-icons{
           width: 150px;
           padding: 10px;
       }
-        .top-container, .middle-container, footer{
+        .top-container, .middle-container{
             padding: 25px 15px;
           }  
         .grid{
@@ -175,6 +175,12 @@ footer li, footer .social-icons{
           .middle-container div:nth-child(2) .image{
                 grid-row: 2;
           }
+          footer{
+            color: white;
+            background-color:  hsl(192, 100%, 9%);
+            padding:150px 15px 50px;
+           
+        }
           .footer-widgets {
               grid-gap: 0;
               margin-top: ;
@@ -194,6 +200,11 @@ footer li, footer .social-icons{
             margin-top: 20px;
 
           }
+          .footer-widget-1 p{
+            padding-left: 15px;
+            font-size: 1em;
+        }
+
           .footer-widget {
             grid-column: span 7;
           }
