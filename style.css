@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     }
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; 
+}
+
+h2,h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+h2{
+    margin-bottom: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+button{
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color:  hsl(322, 100%, 66%);
+    font-size: 0.9em;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 50px;
+}
+.top-container, .middle-container, footer{
+  padding: 50px;
+}
+.top-container{
+    background-image: url(images/bg-hero-desktop.svg);
+    background-color:  hsl(193, 100%, 96%)  ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-size: 1.1em;
+      }
+     .top-container .top{
+          display: flex;
+          justify-content: space-between;
+      }
+      .top button{
+          color: black;
+          background-color: white;
+      }
+      .top-container .bottom{
+          margin-top: 100px;
+      }
+      .middle-container >div{
+          padding: 30px 15px 25px 80px;
+          border-radius: 10px;
+          margin-top: 20px;
+          box-shadow: 0 0 2px 0px hsl(208, 11%, 55%);
+
+      }
+      .middle-container div:nth-child(2) .image{
+        grid-column: 1;
+        grid-row: 1;
+      }
+           .text{
+        align-self:center;
+      }
+      .text button{
+          margin-top: 25px;
+      }
+      .middle-container p{
+        color: hsl(208, 11%, 55%);
+      }
+      .bottom-container{
+          position: relative;
+          left: 50%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+        background-color: white;
+        padding:65px ;
+        width:fit-content;
+         border-radius: 10px;
+         box-shadow: 0 -2px 2px 0px hsl(208, 11%, 55%);
+      }
+footer{
+    color: white;
+    background-color:  hsl(192, 100%, 9%);
+    padding-top: 130px;
+   
+}
+.footer-widgets{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+     margin-top: 20px;
+     grid-gap: 65px;
+}
+.footer-widget-1{
+    grid-column: span 3;
+      }
+   .footer-widget-1 li{
+    display: flex;
+    align-items: flex-start;
+}
+.footer-widget-1 p{
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+.footer-widget-1 img{
+    margin-top: 10px;
+}
+.footer-widget-4{
+    grid-column: span 2;
+      }
+footer li, footer .social-icons{
+      padding: 15px 0 ;
+}
+   
+     .social-icons{
+      display: flex;
+      justify-content:center;
+      }
+      .social-icons .icon{
+          margin:0 15px;
+          height: 40px;
+          width: 40px;
+          padding:10px;
+          border: 1px solid white;
+          border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+      }
+      div.copyright{
+         text-align: center;
+         font-size: 0.5em;
+        position: relative;
+        top:50%;
+      }
+      @media screen and (max-width:991px){
+        .top-container{
+          background-image: url(images/bg-hero-mobile.svg);
+         
+            }
+       .top img{
+        max-width: 80%;
+       }
+        .top button{
+          width: 150px;
+          padding: 10px;
+      }
+        .top-container, .middle-container, footer{
+            padding: 25px 15px;
+          }  
+        .grid{
+              grid-template-columns:1fr;
+              text-align: center;
+          }
+          .middle-container >div{
+            padding: 50px 30px;
+                  }
+          .middle-container div:nth-child(2) .image{
+                grid-row: 2;
+          }
+          .footer-widgets {
+              grid-gap: 0;
+              margin-top: ;
+          }
+          .footer-widget-1{
+              margin-bottom: 50px;
+          }
+          .bottom-container{
+              padding: 45px 25px;
+              max-width: 90vw;
+          }
+          .bottom-container h2{
+            font-size: 0.9em;
+
+          }
+          .bottom-container button{
+            margin-top: 20px;
+
+          }
+          .footer-widget {
+            grid-column: span 7;
+          }
+          footer li{
+            padding: 8px 0 ;
+      }
+      }
