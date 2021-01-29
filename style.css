@@ -213,3 +213,8 @@ footer li, footer .social-icons{
             padding: 8px 0 ;
       }
       }
+      @media screen and (max-width:768px){
+           .top button{
+               padding:8px 15px
+      }
+}
